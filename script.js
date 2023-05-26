@@ -18,11 +18,28 @@ const calcprice = (kilometers * 0.21);
 console.log(calcprice);
 
 //TRASFORMIAMO IL PREZZO IN UNA CIFRA CON MASSIMO DUE DECIMALI
-const calcdecimalprice = Math.floor(calcprice);
+const calcdecimalprice = calcprice.toFixed(2);
 console.log(calcdecimalprice);
 
-//PREPARO IL TESTO DA SCRIVERE
-const textprice = "Il prezzo che lei deve sganciare è € "
+//PREPARO IL TESTO DA SCRIVERE PER IL PREZZO SENZA SCONTI
+const textprice = "Il prezzo che lei deve sganciare senza aver diritto a sconti è € "
 
-//SCRIVO ALL'UTENTE IL PREZZO
+//SCRIVO ALL'UTENTE IL PREZZO SENZA SCONTI
 finalprice.innerText = textprice + calcdecimalprice;
+
+//SE L'ETA' E' MINORE DI 18 ANNI CALCOLO SCONTO E PREZZO SCONTATO
+if (age < 18); {
+    const minordiscount = ((calcdecimalprice*20)/100);
+    console.log(minordiscount);
+    const calcminorprice = calcdecimalprice - minordiscount;
+    console.log(calcminorprice);
+
+    //PREPARO IL TESTO DA SCRIVERE PER IL PREZZO SE MINORENNE
+    const textminorprice = "Il prezzo che lei deve sganciare da minorenne è € " 
+    
+    //SCRIVO ALL'UTENTE IL PREZZO SENZA SCONTI
+    finalprice.innerText = textminorprice + calcminorprice;
+}
+
+
+
