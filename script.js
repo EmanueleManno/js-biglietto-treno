@@ -34,9 +34,9 @@ fullprice.innerText = textprice + calcdecimalprice;
 //SE L'ETA' E' MINORE DI 18 ANNI CALCOLO SCONTO E PREZZO SCONTATO
 if (age < 18)
 {
-    const minordiscount = ((calcdecimalprice*20)/100);
+    const minordiscount = (((calcdecimalprice*20)/100)).toFixed(2);
     console.log(minordiscount);
-    const calcminorprice = calcdecimalprice - minordiscount;
+    const calcminorprice = (calcdecimalprice - minordiscount).toFixed(2);
     console.log(calcminorprice);
 
     //PREPARO IL TESTO DA SCRIVERE PER LO SCONTO SE MINORENNE
@@ -55,9 +55,9 @@ if (age < 18)
 //SE L'ETA' E' MAGGIORE O UGUALE A 65 ANNI CALCOLO SCONTO E PREZZO SCONTATO
 else if (age >= 65) 
 {
-    const majordiscount = ((calcdecimalprice*40)/100);
+    const majordiscount = (((calcdecimalprice*40)/100)).toFixed(2);
     console.log(majordiscount);
-    const calcmajorprice = calcdecimalprice - majordiscount;
+    const calcmajorprice = (calcdecimalprice - majordiscount).toFixed(2);
     console.log(calcmajorprice);
 
     //PREPARO IL TESTO DA SCRIVERE PER LO SCONTO SE OVER 65
