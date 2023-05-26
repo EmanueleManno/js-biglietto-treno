@@ -11,22 +11,33 @@
     <title>Biglietto del treno</title>
     <!--Collegamento del file HTML con il CSS-->
     <link rel="stylesheet" href="style.css" type="text/css">
-    <!--Importazione del file Javascript-->
-    <script defer src="script.js"></script>
 </head>
 
 <body>
-    <!--Titolo della pagina-->
-    <h1>PREZZO DEL BIGLIETTO</h1>
-    <!--Sottotitolo della pagina-->
-    <h3>Ecco un bel sito che vi calcola il prezzo del biglietto</h3>
-    <!--Tariffa-->
-    <p>La tariffa del biglietto è di 0.21 € al km</p>
-    <!--Scontistiche-->
-    <p>C'è uno sconto del 20% per i minorenni</p>
-    <p>C'è uno sconto del 40% per gli over 65.</p>
-    <p id="full-price"></p>
-    <p id="discount"></p>
-    <p id="final-price"></p>
+    <main class="container">
+        <div class="box">
+            <!--Titolo della pagina-->
+            <h1>PREZZO DEL BIGLIETTO</h1>
+            <!--Sottotitolo della pagina-->
+            <h3>Ecco un bel sito che vi calcola il prezzo del biglietto!</h3>
+            <!--Tariffa-->
+            <p>La tariffa del biglietto è di 0.21 € al km.</p>
+            <!--Scontistiche-->
+            <p>C'è uno sconto del 20% per i minorenni.</p>
+            <p>C'è uno sconto del 40% per gli over 65.</p>
+            </div>
+            <div class="box">
+            <!--Prezzo pieno senza sconti-->
+            <p id="full-price"></p>
+            <!--Lo sconto riservato-->
+            <p id="discount"></p>
+            <!--Prezzo scontato-->
+            <p id="final-price"></p>
+        </div>
+    </main>
+
+<!--Importazione del file Javascript-->
+<script src="script.js"></script>
+
 </body>
 </html>
